@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Company</title>
+
+        <link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css">
+        <link rel = "stylesheet" type = "text/css" href = "scss/color.css">
+        <!--script type = "text/javascript" src = "js/bootstrap.min.js"></script-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">The Company</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="home-page.html">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-page.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacts-page.html">Contact Page</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Our Work
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="products.html">Products</a>
+                    <a class="dropdown-item" href="services.html">Services</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <h2 style="text-align: center;">Differences between Cloud Computing and Grid Computing : </h2>
+        <div class="container" id="cols">
+            <div class="row">
+                <div class="col-sm-6" style="background-color:yellow;">
+                  <a data-toggle="tooltip" data-placement="left" title="Cloud Computing">Cloud Computing</a>
+                </div>
+                <div class="col-sm-6" style="background-color:orange;">
+                  <a data-toggle="tooltip" data-placement="right" title="Grid Computing">Grid Computing</a>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6" style="background-color:orange;">
+                  <a data-toggle="tooltip" data-placement="left" title="Cloud Computing">
+                    Cloud Computing follows client-server computing architecture.
+                  </a>
+                </div>
+                <div class="col-sm-6" style="background-color:yellow;">
+                  <a data-toggle="tooltip" data-placement="right" title="Grid Computing">
+                    Grid computing follows a distributed computing architecture.
+                  </a>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6" style="background-color:yellow;">Scalability is high.</div>
+                <div class="col-sm-6" style="background-color:orange;">Scalability is normal.</div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6" style="background-color:orange;">Cloud Computing is more flexible than grid computing.</div>
+                <div class="col-sm-6" style="background-color:yellow;">Grid Computing is less flexible than cloud computing.</div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6" style="background-color:yellow;">Cloud operates as a centralized management system.</div>
+                <div class="col-sm-6" style="background-color:orange;">Grid operates as a decentralized management system.</div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6" style="background-color:orange;">In cloud computing, cloud servers are owned by infrastructure providers.</div>
+                <div class="col-sm-6" style="background-color:yellow;">In Grid computing, grids are owned and managed by the organization.</div>
+            </div>
+        </div>
+        <button class="btn btn-purple" data-toggle="modal" data-target="#exampleModal">Feedback</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Feedback Form</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form class="form-group">
+                  <div class="container-fluid">
+                    <label for = "email">Email</label><br>
+                    <input type = "email" id = "email" placeholder = "Enter your Email here" class = "form-control"><br><br>
+                    <label for = "message">Message</label><br>
+                    <textarea rows = "6" cols = "6" placeholder = "Enter your Message here" class = "form-control"></textarea>
+                    <div style="margin-top: 20px; text-align: right;">
+                      <button type="submit" class="btn btn-success">Save changes</button> &nbsp;
+                      <button type="reset" class="btn btn-danger">Clear changes</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+          });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+

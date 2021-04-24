@@ -1,0 +1,10 @@
+@import "modules/variables";
+@import "modules/mixins";
+
+@import "partials/base";
+@import "partials/nav";
+
+h1, h3{
+    @include add-border;
+}
+

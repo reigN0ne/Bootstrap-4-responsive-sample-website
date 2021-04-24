@@ -1,0 +1,33 @@
+@import "./modules/mixins";
+
+h1{
+    @include add-color;
+}
+
+.carousel{
+    background: #2f4357;
+    @include add-margin;
+}
+.carousel-item{
+    text-align: center;
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+
+/*Overriding bootstrap footer*/
+footer {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+.row{
+    @include add-border;
+}
+
+.btn{
+    .btn-purple{
+        align-content: center;
+        @include responsive(lg);
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

@@ -1,0 +1,43 @@
+@mixin add-border($radius: 1px){
+    border: $radius solid black;
+}
+
+@mixin add-margin($margin:20px){
+    margin: $margin;
+    padding-left: 5px;
+    background-color: black;
+    color: white;
+}
+
+@mixin add-color($color:white, $bg-color:black){
+    background-color: $bg-color;
+    color: $color;
+}
+
+@mixin responsive($size){
+    @if size == xs {
+        @media(max-width: 576px){
+            @content;
+        }
+    }
+    @else if $size == sm {
+        @media(min-width: 576px) and (max-width: 768px){
+            @content;
+        }
+    }
+    @else if $size == md {
+        @media(min-width: 768px) and (max-width: 992px){
+            @content;
+        }
+    }
+    @else if $size == lg{
+        @media(min-width: 992px) and (max-width:1200px){
+            @content;
+        }
+    }
+    @else if $size == xl{
+        @media(min-width: 1200px){
+            @content;
+        }
+    }
+}

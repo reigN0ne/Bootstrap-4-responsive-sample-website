@@ -1,0 +1,36 @@
+h1 {
+  background-color: black;
+  color: white;
+}
+
+.carousel {
+  background: #2f4357;
+  margin: 20px;
+  padding-left: 5px;
+  background-color: black;
+  color: white;
+}
+
+.carousel-item {
+  text-align: center;
+  min-height: 280px;
+  /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+
+/*Overriding bootstrap footer*/
+footer {
+  background-color: blanchedalmond;
+  color: black;
+}
+
+.row {
+  border: 1px solid black;
+}
+
+.btn .btn-purple {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*# sourceMappingURL=color.css.map */
